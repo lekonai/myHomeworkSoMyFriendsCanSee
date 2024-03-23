@@ -7,7 +7,7 @@ class Program
         Console.WriteLine("How many sides would you like on your die?: ");
         int inp = int.Parse(Console.ReadLine());
         Dice myDice = new Dice(inp);
-        Warrior bigMAN = new Warrior("robert");
+        HealingWarrior bigMAN = new HealingWarrior("robert");
         Console.WriteLine("Just created the hero, their name is: {0}, and the big guy's got {1} health", bigMAN.GetName(), bigMAN.GetHealth());
         Warrior smallMAN = new Warrior("obscurenameInsertHERE");
         Console.WriteLine("And in the other corner of the ring, we have the small GUY. Their name is: {0}, and the big guy's got {1} health", smallMAN.GetName(), smallMAN.GetHealth());
@@ -18,6 +18,19 @@ class Program
             Console.WriteLine("Enemy turn");
             smallMAN.Attack(bigMAN,myDice.Roll());
             Console.WriteLine(" ");
+            if (bigMAN.getHaveHealed() == false)
+            {
+                Console.WriteLine("Wanna heal? y/n");
+                ConsoleKeyInfo input = Console.ReadKey();
+                if (input.Key == ConsoleKey.Y)
+                {
+                    bigMAN.heal();
+                }
+                else
+                {
+                    Console.WriteLine("The fight continues...");
+                }
+            }
         }
 
         if (bigMAN.GetHealth() > smallMAN.GetHealth())

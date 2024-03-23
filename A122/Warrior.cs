@@ -3,8 +3,8 @@
 public class Warrior
 {
     private string name;
-    private int currentHealth;
-    private int maxHealth;
+    protected int currentHealth;
+    protected int maxHealth;
     private int attackDamage;
 
     public Warrior(string myName)
@@ -45,5 +45,27 @@ public class Warrior
     {
         currentHealth -= diceRoll * attackedDamage;
         Console.WriteLine("Just lost {0} health :(", diceRoll * attackedDamage);
+    }
+}
+
+public class HealingWarrior : Warrior
+{
+    private bool haveHealed;
+
+    public HealingWarrior(string myName) : base(myName)
+    {
+        haveHealed = false;
+    }
+
+    public void heal()
+    {
+        Console.WriteLine($"You heal! Your health goes from {currentHealth} to {maxHealth}");
+        currentHealth = maxHealth;
+        haveHealed = true;
+    }
+
+    public bool getHaveHealed()
+    {
+        return haveHealed;
     }
 }
