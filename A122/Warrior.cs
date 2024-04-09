@@ -4,13 +4,12 @@ public class Warrior
 {
     private string name;
     protected int currentHealth;
-    protected int maxHealth;
+    protected const int maxHealth = 100;
     private int attackDamage;
 
     public Warrior(string myName)
     {
         name = myName;
-        maxHealth = 100;
         currentHealth = maxHealth;
         attackDamage = 10;
     }
@@ -35,9 +34,9 @@ public class Warrior
         return false;
     }
 
-    public void Attack(Warrior enemy, int diceRoll)
+    public virtual void  Attack(Warrior enemy, int diceRoll)
     {
-        Console.WriteLine("ATTACK! WITH {0} DAMAGE!", diceRoll);
+        Console.WriteLine("ATTACK! WITH {0} AS THE MODIFIER!", diceRoll);
         enemy.Attacked(diceRoll,attackDamage);
     }
 
@@ -68,4 +67,43 @@ public class HealingWarrior : Warrior
     {
         return haveHealed;
     }
+}
+
+public class Mage : Warrior
+{
+    private int mana;
+    private int maxMana;
+    private int magicDamage;
+
+    public Mage(string inName, int inmaxMana, int inmagicDamage) : base(inName)
+    {
+        maxMana = inmaxMana;
+        magicDamage = inmagicDamage;
+        mana = maxMana;
+    }
+    public override void Attack(Warrior enemy, int diceRoll)
+    {
+        if (mana < maxMana)
+        {
+            mana += 10;
+            if (mana > 10)
+            {
+                mana = 10;
+            }
+            Console.WriteLine("Not enough mana to attack, mana has been added instead; your mana is now {0}", mana);
+        }
+        else
+        {
+            mana = 0;
+            Console.WriteLine("ATTACK! WITH {0} AS THE MODIFIER!", diceRoll);
+            enemy.Attacked(diceRoll,magicDamage);
+        }
+        
+    }
+
+    public int getMana()
+    {
+        return mana;
+    }
+    
 }
