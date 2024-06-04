@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A130", "A130\A130.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W137 - Dictionaries", "W137 - Dictionaries\W137 - Dictionaries.csproj", "{925228C9-4892-4E87-8FAC-E60ECA6E77F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W107 - Built-In Funcs .. String Manip", "W107 - Built-In Funcs .. String Manip\W107 - Built-In Funcs .. String Manip.csproj", "{5E25E04B-45CB-40BF-87F4-440F853BBE52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{925228C9-4892-4E87-8FAC-E60ECA6E77F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{925228C9-4892-4E87-8FAC-E60ECA6E77F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{925228C9-4892-4E87-8FAC-E60ECA6E77F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E25E04B-45CB-40BF-87F4-440F853BBE52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E25E04B-45CB-40BF-87F4-440F853BBE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E25E04B-45CB-40BF-87F4-440F853BBE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E25E04B-45CB-40BF-87F4-440F853BBE52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
