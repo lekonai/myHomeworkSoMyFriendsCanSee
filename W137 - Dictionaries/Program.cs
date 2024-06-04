@@ -9,7 +9,7 @@ class Program
         Dictionary<string, int> wordsReps = new Dictionary<string, int>();
         string inp = Console.ReadLine();
         string[] words = inp.Split(" ");
-        for (int i = 0; i < inp.Length; i++)
+        for (int i = 0; i < words.Length; i++)
         {
             if (wordsReps.ContainsKey(words[i]))
             {
@@ -21,9 +21,9 @@ class Program
             }
         }
 
-        // foreach (string in COLLECTION)
-        // {
-        //     
-        // }
+        foreach (string key in wordsReps.Keys)
+        {
+            Console.WriteLine("{0} - {1}", key, wordsReps[key]);
+        }
     }
 }
