@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W137 - Dictionaries", "W137
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W107 - Built-In Funcs .. String Manip", "W107 - Built-In Funcs .. String Manip\W107 - Built-In Funcs .. String Manip.csproj", "{5E25E04B-45CB-40BF-87F4-440F853BBE52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A131", "A131\A131.csproj", "{986AE645-DDC8-4EDA-BE02-47585862A8D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{5E25E04B-45CB-40BF-87F4-440F853BBE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E25E04B-45CB-40BF-87F4-440F853BBE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E25E04B-45CB-40BF-87F4-440F853BBE52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{986AE645-DDC8-4EDA-BE02-47585862A8D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{986AE645-DDC8-4EDA-BE02-47585862A8D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{986AE645-DDC8-4EDA-BE02-47585862A8D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{986AE645-DDC8-4EDA-BE02-47585862A8D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
