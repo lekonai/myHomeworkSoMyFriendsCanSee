@@ -54,12 +54,10 @@ class Program
         {
             foreach (var v in inp[i])
             {
-                Console.WriteLine("input 1 {0}", inp[i]);
                 tempNum1++;
             }
             foreach (var b in inp[i + 1])
             {
-                Console.WriteLine("input 2 {0}", inp[i + 1]);
                 tempNum2++;
             }
 
