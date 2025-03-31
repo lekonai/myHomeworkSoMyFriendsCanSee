@@ -21,6 +21,7 @@ class Program
     
     static void VorC(string str)
     {
+        str = str.ToLower();
         int vowels = 0;
         int cons = 0;
         for (int i = 0; i < str.Length; i++)
